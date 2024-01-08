@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div id="fullpage">
+
+        <!-- Nav & Header -->
+    
+        <div class="section">
+            <div id="header">
+                <div class="container">
+                    <nav>
+                        <img src="img/PDLogoExperiment.png" class="logo">
+                        <ul id="sidemenu">
+                            <li data-menuanchor="header"><a href="#header">Home</a></li>
+                            <li data-menuanchor="about"><a href="#about">About Me</a></li>
+                            <li data-menuanchor="portfolio"><a href="#portfolio">Portfolio</a></li>
+                            <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
+                            <i class="fas fa-times" onclick="closemenu()"></i>
+                        </ul>
+                        <i class="fas fa-bars" onclick="openmenu()"></i>
+                    </nav>
+                    <div class="header-text">
+                        <h1>Hi, I'm <span>Teng Kiat</span></h1>
+                        <img src="img/PDLogoExperiment.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About -->
+    
+        <div class="section">
+            <div id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="about-col-1">
+                            <img src="img/james-person-1.jpg">
+                        </div>
+                        <div class="about-col-2">
+                            <h1 class="sub-title">About Me</h1>
+                            <p>Lorem ipsum dolor sit amet. Sit dolore esse ut iusto similique et atque quas ad galisum
+                                consequuntur. Eos dolores quia ea sapiente consequatur At esse labore ad dolore
+                                perspiciatis.
+                            </p>
+    
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            </div>
+                            <!-- Skills -->
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>Design</span><br>
+                                        - Adobe XD<br>
+                                        - Adobe Illustrator<br>
+                                        - Adobe Photoshop
+                                    </li>
+                                    <li><span>Development/Profgramming</span><br>
+                                        - Python<br>
+                                        - HTML<br>
+                                        - CSS<br>
+                                        - JavaScript<br>
+                                        - Java<br>
+                                        - C#
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Eductaion -->
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>Secondary School</span><br>Hua Yi Secondary School<br>2018-2021</li>
+                                    <li><span>Post Secondary</span><br>Republic Polytechnic - Digital Design and
+                                        Devlepment<br>2022-Present</li>
+                                </ul>
+                            </div>
+                            <!-- Experience -->
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span>March 16 2024 - July 22 2024</span><br>Level 1 IT support @ St. Luke's Hospital Internship<br>2018 - 2021</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Portfolio -->
+    
+        <div class="section">
+            <div id="portfolio">
+                <div class="container">
+                    <div class="sub-title">My Work</div>
+                    <div class="port-list">
+                        <div class="port-section">
+                            <img src="img/work-1.png" alt="">
+                            <div class="layer">
+                                <h3>Design</h3>
+                                <a href="design.html"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="port-section">
+                            <img src="img/work-2.png" alt="">
+                            <div class="layer">
+                                <h3>Development</h3>
+                                <a href="development.html"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="port-section">
+                            <img src="img/work-3.png" alt="">
+                            <div class="layer">
+                                <h3>Others</h3>
+                                <a href="others.html"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact -->
+        
+        <div class="section">
+            <div id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="contact-left">
+                            <h1 class="sub-title">Contact Me</h1>
+                            <p><i class="fas fa-envelope"></i>22021958@myrp.edu.sg</p>
+                            <p><i class="fas fa-phone"></i></i></i>82349500</p>
+                            <div class="social-icons">
+                                <a href=""><i class="fab fa-facebook"></i></i></a>
+                                <a href=""><i class="fab fa-instagram"></i></i></a>
+                                <a href=""><i class="fab fa-linkedin-in"></i></i></a>
+                            </div>
+                        </div>
+                        <div class="contact-right">
+                            <form>
+                                <input type="text" name="Name" placeholder="Your Name" required>
+                                <input type="email" name="email" placeholder="Your Email" required>
+                                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                                <button type="submit" class="btn">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+
+        <div class="section">
+            <div class="footer">
+                <p>Copyright &copy TK</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="/scripts.js" type="text/JavaScript"></script>
+</body>
+
+</html>
